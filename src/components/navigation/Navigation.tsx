@@ -1,5 +1,6 @@
 "use client";
-import { HomeFilled } from "@ant-design/icons";
+import { TbChartDotsFilled } from "react-icons/tb";
+import { GoHomeFill } from "react-icons/go";
 import { FaSignOutAlt } from "react-icons/fa";
 import s from "../../styles/main.module.scss";
 import React, { useState } from "react";
@@ -31,7 +32,8 @@ const Navigation = () => {
           >
             {" "}
             داشبورد{" "}
-            <Image src={"/assets/home.svg"} alt="" width={32} height={32} />
+            {/* <Image src={"/assets/home.svg"} alt="" width={32} height={32} /> */}
+            <GoHomeFill />
             <div
               style={selectedTab === "/dashboard" ? {} : { width: "0" }}
               className={s.selected_sign}
@@ -47,7 +49,8 @@ const Navigation = () => {
           >
             {" "}
             سیگنال ها{" "}
-            <Image src={"/assets/activity.svg"} alt="" width={32} height={32} />
+            {/* <Image src={"/assets/activity.svg"} alt="" width={32} height={32} /> */}
+            <TbChartDotsFilled />
             <div
               style={selectedTab === "/signals" ? {} : { width: "0" }}
               className={s.selected_sign}

@@ -5,6 +5,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ConfigProvider } from "antd";
 import theme from "@/src/theme/themeConfig";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const dana = localFont({
   src: "../public/.././public/assets/Gilroy Font/Gilroy-Medium.ttf",
